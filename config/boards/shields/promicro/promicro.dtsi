@@ -1,11 +1,9 @@
 #include <dt-bindings/zmk/matrix_transform.h>
-()
+
 / {
     chosen {
         zmk,kscan = &kscan0;
         zmk,matrix_transform = &default_transform;
-//        zephyr,display = &oled;
-		zmk,underglow = &led_strip;
     };
 
     default_transform: keymap_transform_0 {
@@ -24,17 +22,17 @@ RC(3,0) RC(3,1) RC(3,2) RC(3,3) RC(3,4) RC(3,5)                  RC(3,6) RC(3,7)
         >;
     };
 
-        kscan0: kscan_0 {
+    kscan0: kscan_0 {
         compatible = "zmk,kscan-gpio-matrix";
         label = "KSCAN";
         diode-direction = "col2row";
 
         row-gpios
             = <&gpio1 15 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>  
-			, <&gpio1 13 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>  
+	    , <&gpio1 13 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>  
             , <&gpio1 11 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>  
-			, <&gpio0 10 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>  
-        	, <&gpio0 9 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>  
+            , <&gpio0 10 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>  
+            , <&gpio0 9 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>  
             ;
 
     };
