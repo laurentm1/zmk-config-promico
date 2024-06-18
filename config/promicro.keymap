@@ -46,12 +46,12 @@
 
         layer_2 {
             bindings = <
-&none  &none  &none  &none  &none  &none        &none  &none  &none  &none  &none  &none
-&none  &none  &none  &none  &none  &none        &none  &none  &none  &none  &none  &none
-&none  &none  &none  &none  &none  &none        &none  &none  &none  &none  &none  &none
-&none  &none  &none  &none  &none  &none        &none  &none  &none  &none  &none  &none
-                     &none  &none  &none                      &none
-                     &none  &none  &none        &none  &none
+&none  &none  &none  &none  &none  &none        &none           &none           &none            &none  &none  &none
+&none  &none  &none  &none  &none  &none        &none           &none           &none            &none  &none  &none
+&none  &none  &none  &none  &none  &none        &none           &kp UP_ARROW    &none            &none  &none  &none
+&none  &none  &none  &none  &none  &none        &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW  &none  &none  &none
+                     &none  &none  &none                                        &none
+                     &none  &none  &none        &none           &none
             >;
 
             sensor-bindings =
