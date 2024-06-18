@@ -21,7 +21,7 @@
 &kp LSHFT  &lt 2 A  &kp S   &kp D          &kp F      &kp G            &kp H      &kp J          &kp K          &kp L    &kp SEMI  &lt 2 SQT
 &kp LCTRL  &lt 1 Z  &kp X   &kp C          &kp V      &kp B            &kp N      &kp M          &kp COMMA      &kp DOT  &kp FSLH  &kp BSLH
                             &kp DEL        &mkp RCLK  &mkp LCLK                                  &kp RIGHT_WIN
-                            &kp BACKSPACE  &kp LALT   &kp ENTER        &kp SPACE  &kp RIGHT_ALT
+                            &kp BACKSPACE  &kp LALT   &kp SPACE        &kp ENTER  &kp RIGHT_ALT
             >;
 
             sensor-bindings =
